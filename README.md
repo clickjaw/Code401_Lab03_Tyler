@@ -9,7 +9,7 @@ Create a single Console Application Project within Visual Studio. Write all of y
 
 Be sure to use exception handling where appropriate, and write tests as outlined in each of the challenges.
 
-Whiteboard at least one of the challenges and include it in your readme. If you are working in groups, every person in the group must have their own whiteboard for a different problem.
+
 
 ### Challenge 1
 
