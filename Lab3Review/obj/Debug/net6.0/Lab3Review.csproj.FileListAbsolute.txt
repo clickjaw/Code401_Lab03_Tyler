@@ -1,0 +1,15 @@
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/bin/Debug/net6.0/Lab3Review
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/bin/Debug/net6.0/Lab3Review.deps.json
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/bin/Debug/net6.0/Lab3Review.runtimeconfig.json
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/bin/Debug/net6.0/Lab3Review.dll
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/bin/Debug/net6.0/Lab3Review.pdb
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.csproj.AssemblyReference.cache
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.AssemblyInfoInputs.cache
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.AssemblyInfo.cs
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.csproj.CoreCompileInputs.cache
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.dll
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/refint/Lab3Review.dll
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.pdb
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/Lab3Review.genruntimeconfig.cache
+/Users/tylermorgan/code401/LABS/Code401_Lab03_Tyler/Lab3Review/obj/Debug/net6.0/ref/Lab3Review.dll
