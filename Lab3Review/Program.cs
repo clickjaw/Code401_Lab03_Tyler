@@ -146,6 +146,8 @@ namespace Lab3Review
 
         static void FileCreateNewFile(string file)
         {
+            Console.WriteLine("-----------------------------------------Challenge 6-------------------------------------");
+
             Console.WriteLine("Enter a words to convert: ");
             string chosenWords = Console.ReadLine();
             string[] chosenWordArray = chosenWords.Split(" ").ToArray();
