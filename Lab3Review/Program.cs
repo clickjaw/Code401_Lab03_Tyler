@@ -16,6 +16,7 @@ namespace Lab3Review
             FourNumbers();
             BuildDiamond();
             MaxNumber();
+            BuildDiamond();
 
             FileCreateNewFile(newFilePath);
 
