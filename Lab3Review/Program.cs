@@ -7,6 +7,9 @@ namespace Lab3Review
     {
         static void Main(String[] args)
         {
+            // string filePath = "../new-data.txt";
+            string newFilePath = "../SecondTake.txt";
+
             BuildDiamond();
             StartLab();
             BuildDiamond();
@@ -14,9 +17,12 @@ namespace Lab3Review
             BuildDiamond();
             MaxNumber();
 
+            FileCreateNewFile(newFilePath);
+
+
         }
 
-        // -------------------------------Challenge 1--------------------------
+        // // -------------------------------Challenge 1--------------------------
         static void StartLab()
         {
             Console.WriteLine("-----------------------------------------Challenge 1-------------------------------------");
@@ -117,7 +123,7 @@ namespace Lab3Review
 
         // }
 
-          static void MaxNumber()
+        static void MaxNumber()
         {
             Console.WriteLine("-----------------------------------------Challenge 5-------------------------------------");
             int[] maxNumberArray = new int[6];
@@ -125,7 +131,7 @@ namespace Lab3Review
             for (int i = 0; i < maxNumberArray.Length; i++)
             {
                 Random maxNum = new Random();
-                int maxNumRandomNum = maxNum.Next(1,1000);
+                int maxNumRandomNum = maxNum.Next(1, 1000);
                 maxNumberArray[i] = maxNumRandomNum;
                 int MaxValue = maxNumberArray.Max();
                 foreach (int numNum in maxNumberArray)
@@ -136,6 +142,40 @@ namespace Lab3Review
 
             }
 
+        }
+
+        static void FileCreateNewFile(string file)
+        {
+            Console.WriteLine("Enter a words to convert: ");
+            string chosenWords = Console.ReadLine();
+            string[] chosenWordArray = chosenWords.Split(" ").ToArray();
+            //  string[] words = { "Never", "Gonna", "Give", "Code", "Up" };
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(file))
+                {
+                    try
+                    {
+                        foreach (string word in chosenWordArray)
+                        {
+                            sw.Write(word + " ");
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        throw;
+                    }
+                    finally
+                    {
+                        sw.Close();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
         }
 
     }
