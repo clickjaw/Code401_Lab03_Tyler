@@ -5,25 +5,28 @@ namespace Lab3Review
 {
     class Program
     {
+
+
         static void Main(String[] args)
         {
-            // string filePath = "../new-data.txt";
+            Console.Clear();
             string newFilePath = "../SecondTake.txt";
 
-            BuildDiamond();
-            StartLab();
-            BuildDiamond();
-            FourNumbers();
-            BuildDiamond();
-            MaxNumber();
-            BuildDiamond();
-
-            FileCreateNewFile(newFilePath);
+            // StartLab(); 
+            // FourNumbers();
+            // BuildDiamond();
+            // MaxNumber();
+            // FileCreateNewFile(newFilePath);
+            // FileAddSomeLines(newFilePath);
+            // FileReadAllTextAsArray(newFilePath);
+            ChallengeNine();
 
 
         }
 
-        // // -------------------------------Challenge 1--------------------------
+
+
+
         static void StartLab()
         {
             Console.WriteLine("-----------------------------------------Challenge 1-------------------------------------");
@@ -33,11 +36,8 @@ namespace Lab3Review
             string[] numStringArray = pickedNum.Split(" ").ToArray();
             int[] numIntArray = Array.ConvertAll(numStringArray, Int32.Parse);
 
-            // foreach (var number in numIntArray)
-            // {
-            //     Console.WriteLine($"StartLab {number}");
-            // }
             int[] finalProduct = GetProduct(numIntArray);
+
             Console.WriteLine($"Product: {finalProduct[0]}");
         }
 
@@ -53,6 +53,13 @@ namespace Lab3Review
             return productArray;
 
         }
+
+
+
+
+
+
+
         static void FourNumbers()
         {
             Console.WriteLine("-----------------------------------------Challenge 2-------------------------------------");
@@ -87,6 +94,10 @@ namespace Lab3Review
             return finalAverage;
         }
 
+
+
+
+
         static void BuildDiamond()
         {
             Console.WriteLine("-----------------------------------------Challenge 3-------------------------------------");
@@ -104,25 +115,6 @@ namespace Lab3Review
     );
         }
 
-        // static void MaxNumber()
-        // {
-        //     Console.WriteLine("-----------------------------------------Challenge 5-------------------------------------");
-        //     int[] maxNumberArray = new int[6];
-
-        //     for (int i = 0; i < maxNumberArray.Length; i++)
-        //     {
-        //         Console.WriteLine($"Enter a number {i}/{maxNumberArray.Length}: ");
-        //         maxNumberArray[i] = Convert.ToInt32(Console.ReadLine());
-        //         int MaxValue = maxNumberArray.Max();
-        //         foreach (int numNum in maxNumberArray)
-        //         {
-        //             Console.WriteLine($"Array: {numNum}");
-        //         }
-        //         Console.WriteLine($"The Highest Value is: {MaxValue}");
-
-        //     }
-
-        // }
 
         static void MaxNumber()
         {
@@ -144,6 +136,10 @@ namespace Lab3Review
             }
 
         }
+
+
+
+
 
         static void FileCreateNewFile(string file)
         {
@@ -179,7 +175,49 @@ namespace Lab3Review
 
                 throw;
             }
+        }//FileCreateNewFile
+
+        static void FileReadAllTextAsArray(string file)
+        {
+            Console.WriteLine("-----------------------------------------Challenge 7-------------------------------------");
+
+            Console.WriteLine("-----Read as Array----");
+            string[] lines = File.ReadAllLines(file);
+            foreach (string line in lines)
+            {
+                Console.WriteLine(line);
+            }
         }
 
+        static void FileAddSomeLines(string file)
+        {
+            Console.WriteLine("-----------------------------------------Challenge 8-------------------------------------");
+
+            Console.WriteLine("------Add Lines-----");
+            Console.WriteLine("Add Lines To Your File: ");
+            string phrase = Console.ReadLine();
+            File.AppendAllText(file, "\n");
+            File.AppendAllText(file, phrase);
+
+        }
+
+
+
+
+
+        static void ChallengeNine()
+        {
+            Console.WriteLine("-----------------------------------------Challenge 9-------------------------------------");
+
+            Console.WriteLine("Write a sentence.");
+            string sentence = Console.ReadLine();
+            string[] wordArray = sentence.Split(" ").ToArray();
+
+            foreach (string word in wordArray)
+            {
+                Console.WriteLine($"{word}: {word.Length} letters");
+            }
+
+        }//Challenge Nine
     }
 }
